@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_lime.mk
+    $(LOCAL_DIR)/ancient_lime.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_lime-user \
-    aosp_lime-userdebug \
-    aosp_lime-eng
+    ancient_lime-user \
+    ancient_lime-userdebug \
+    ancient_lime-eng
