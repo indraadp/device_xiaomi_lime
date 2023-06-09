@@ -17,8 +17,8 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
 # GApps
-ANCIENT_GAPPS := true
-TARGET_GAPPS_ARCH := arm64
+#ANCIENT_GAPPS := true
+#TARGET_GAPPS_ARCH := arm64
 
 # Inherit from lime device
 $(call inherit-product, device/xiaomi/lime/device.mk)
