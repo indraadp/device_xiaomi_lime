@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/ancient_lime.mk
+    $(LOCAL_DIR)/superior_lime.mk
 
 COMMON_LUNCH_CHOICES := \
-    ancient_lime-user \
-    ancient_lime-userdebug \
-    ancient_lime-eng
+    superior_lime-user \
+    superior_lime-userdebug \
+    superior_lime-eng
