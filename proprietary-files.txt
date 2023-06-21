@@ -308,26 +308,42 @@ vendor/lib/modules/modules.softdep
 vendor/lib/modules/qca_cld3_wlan.ko
 vendor/lib/modules/rdbg.ko
 
-# NFC
-vendor/bin/STFlashTool
-vendor/etc/libnfc-hal-st.conf
-vendor/etc/libnfc-nci.conf
-vendor/etc/st21nfc_conf.txt
-vendor/lib/libsn100u_fw.so
-vendor/lib64/libst_sr_models.so
-vendor/lib64/libstfactory-vendor.so
-vendor/lib64/nfc_nci.st21nfc.st.so
+# Mlipay - from MIUI
+vendor/bin/mlipayd@1.1|24ac06cfc3e712295b94a6f25c40a29a978fbfa2
+vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc|b5ab5bcd031fe4d9781b5911c0595eaeac8b80ea
+vendor/etc/init/vendor.xiaomi.hardware.mtdservice@1.3-service.rc|84c831b078ceceef79105c522eff92ad00f7aabe
+-vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml|27aaea2ab58ace6555a634dc60ea062736342eb4
+-vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mtdservice.xml|708ce224390a7f564be14a4c26736170395ae529
+vendor/lib64/libmlipay.so|14ebd4fa81ff5821f365079746cb34aafad57545
+vendor/lib64/libmlipay@1.1.so|882d992cb017120a2d1f2b82817718eb53d57041
+vendor/lib64/libwvkeybox.so|76b2dfb6d4c8d65b318b40756e234f06779c3c23
+vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so|964b0f4dab32e0b7d2a1323687eac6f14c1d0df0
+vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so|7abe9fa2df4e58d6b3e67b88c26f85693ee06418
+vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so|4965aefda3f8ec9656fe8fc208b57b8539b94ac4
+vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.1.so|f5ff36aa61dacf71bb621c4ace91907f69d88af0
+vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.2.so|fb978f6bc9b919dbd801f8de6f2eea4861dfa813
+vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.3.so|28b36113816dcca6def9a6c7710b2e5490b398b6
 
-# NFC Firmware
-vendor/firmware/st21nfc_fw.bin
-vendor/firmware/st21nfc_fw7.bin
+# NFC - from MIUI
+vendor/bin/STFlashTool|a055531e05df4b4297a90fc26c3f3ba175ea728e
+vendor/etc/libnfc-nci.conf|011c710b2a339a302f1f2a21620930784cf8be98
+vendor/etc/st21nfc_conf.txt|8bddb37624c486d81f1022023bc10d878ee54407
+vendor/lib/libsn100u_fw.so|2bc1887b71b4557b75e26465f6917525bfd43e4a
+vendor/lib64/libst_sr_models.so|cf731a851fa87429c593cddb559324e51d15ef4f
+vendor/lib64/libstfactory-vendor.so|11cbee0967bc9810b4e518236c3add1837b3bb53
+vendor/lib64/nfc_nci.st21nfc.st.so|64ae7c8c50b69a082a3db411de54605c786caf67
 
-# Soter
--vendor/app/SoterService/SoterService.apk
-vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
-vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
-vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.soter@1.0.so
+# NFC Firmware - from MIUI
+vendor/firmware/st21nfc_fw.bin|f3415b51288b7114d856bdb671c218bba21c31c2
+vendor/firmware/st21nfc_fw7.bin|911906c79d9bdce044e74165036c63dc1295b852
+
+# Soter - from MIUI
+-vendor/app/SoterService/SoterService.apk|2eac3d413bc9e94691d6909da6b27357d1c9463d
+vendor/bin/hw/vendor.qti.hardware.soter@1.0-service|8e315a85eeeb94a51f1533c80212d2fc0ec88760
+vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc|76447a61ad5529949365eeb7e8ca000e48bd28ae
+vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so|859ca42e0cbd88c896b174e7537c2d17643cf724
+vendor/lib64/vendor.qti.hardware.soter@1.0.so|8251cbf50d81918cb0ab298e4ed26d21748624f0
+
 
 # Touch firmware
 vendor/firmware/focaltech_ts_fw.bin
