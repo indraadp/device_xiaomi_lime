@@ -15,8 +15,8 @@ TARGET_INCLUDE_PIXEL_CHARGER := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # GApps
-#BUILD_WITH_GAPPS := true
-#TARGET_GAPPS_ARCH := arm64
+BUILD_WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
 
 # Inherit from lime device
 $(call inherit-product, device/xiaomi/lime/device.mk)
