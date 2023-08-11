@@ -13,6 +13,7 @@ $(call inherit-product, vendor/superior/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_PIXEL_CHARGER := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_USES_BLUR := true
 
 # GApps
 BUILD_WITH_GAPPS := true
